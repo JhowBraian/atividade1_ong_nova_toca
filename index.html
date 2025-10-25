@@ -3,96 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Nova Toca</title>   
+    <title>Projeto Nova Toca - Início</title>
+        
 </head>
 <body>
-       
-    
+
     <header>
-        <img src="imagens/logo.jpeg" alt="Logotipo do Projeto Nova Toca, mostrando um coelho branco dentro de uma toca marrom com folhas verdes no topo." width="300px">
-        <h1>Nova Toca</h1>
+        <div class="logo-group">
+            <!-- Usando um placeholder funcional -->
+            <img src="imagens/logo.jpeg" alt="Logotipo do Projeto Nova Toca" width="320">
+            <h1>Nova Toca</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="sobre.html">Sobre</a></li>
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="projetos.html">Projetos</a></li> 
+                <li><a href="cadastro.html">Cadastro</a></li> 
                 <li><a href="#contato">Contato</a></li>
+            
             </ul>
         </nav>
-    
-    
-</header>
-    <main> 
-      <h2> Uma nova toca segura para cada coelho resgatado.</h2>
-      <p>Seu apoio cria novos começos para coelhos. </p>
-      <a href="voluntario.html">Seja Voluntario!</a>
-    
+    </header>
 
-        <section>  
-            <h2>Nossos números de impactos</h2>
-            <h3>Coelhos Resgatados: 500+</h3>
-            <p> Mais de 500 coelhos receberam uma segunda chance.</p>
-
-            <h3>Adoções Realizadas: 420</h3>
-            <p>420 coelhos encontraram seu lar permanente.</p>
-
-            <h3>Depoimentos de Adotantes Felizes: 300+</h3>
-            <p>famílias compartilharam suas histórias de amor.</p>
-
-            <h3>Parceiros Veterinários:</h3>
-            <p>Contamos com 15 clínicas e veterinários parceiros.</p>
-
-
+    <main>
+        
+        <!-- Seção Herói -->
+        <section class="hero-section">
+            <h2>Uma nova toca segura para cada coelho resgatado.</h2>
+            <p>Seu apoio cria novos começos para coelhos.</p>
+            <a href="voluntario.html" class="cta-button">Seja Voluntário!</a>
         </section>
 
-        <section>
-         <h2>Conheça nossos trabalhos.</h2>
+        <div class="container">
+            <!-- Seção de Impacto -->
+            <section>
+                <h2>Nossos números de impacto</h2>
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <h3>500+</h3>
+                        <p>Coelhos Resgatados</p>
+                    </div>
+                    <div class="impact-item">
+                        <h3>420+</h3>
+                        <p>Adoções Realizadas</p>
+                    </div>
+                    <div class="impact-item">
+                        <h3>300+</h3>
+                        <p>Depoimentos Felizes</p>
+                    </div>
+                    <div class="impact-item">
+                        <h3>15+</h3>
+                        <p>Parceiros Veterinários</p>
+                    </div>
+                </div>
+            </section>
 
-         <article>
-        <img src="imagens/nossos projetos.jpg" alt="Pessoas cuidando de coelhos" width="150px">
-        <p>Descubra nossos projetos</p>
-        <a href="projeto.html" >Ver projetos</a>
-         </article>
+            <!-- Seção "Nossos Trabalhos" -->
+            <section>
+                <h2>Conheça nossos trabalhos</h2>
+                <div class="work-grid">
+                    <!-- Card 1: Projetos -->
+                    <article class="work-card">
+                        <!-- Usando um placeholder funcional -->
+                        <img src="imagens/nossos projetos.jpg" alt="Pessoas cuidando de coelhos" width="320">
+                        <div class="work-card-content">
+                            <h3>Nossos Projetos</h3>
+                            <p>Descubra nossas iniciativas de resgate, reabilitação e adoção consciente.</p>
+                            <a href="projetos.html" class="cta-button-small">Ver projetos</a>
+                        </div>
+                    </article>
 
-           <article>
-        <img src="imagens/doação imagem.png" alt="pessoas fazendo doações para ajudar coelhos" width="150px">
-        <p>Sua contribuição salva vidas!</p>
-        <a href="voluntario.html" >Saiba como</a>
-         </article>
+                    <!-- Card 2: Doação -->
+                    <article class="work-card">
+                        <!-- Usando um placeholder funcional -->
+                        <img src="imagens/doação imagem.png" alt="Ilustração de doação" width="320">
+                         <div class="work-card-content">
+                            <h3>Faça uma Doação</h3>
+                            <p>Sua contribuição salva vidas e ajuda a manter nosso abrigo funcionando.</p>
+                            <!-- O link 'voluntario.html' contém o formulário -->
+                            <a href="voluntario.html" class="cta-button-small">Saiba como</a>
+                        </div>
+                    </article>
 
-
-           <article>
-        <img src="imagens/sejavoluntario.jpg" alt="Pessoas cuidando de coelhos" width="150px">
-        <p>Seja voluntario!</p>
-        <a href="voluntario.html" >Seja Voluntario</a>
-         </article>
-
-
-
-        </section>
-
+                    <!-- Card 3: Voluntário -->
+                    <article class="work-card">
+                        <!-- Usando um placeholder funcional -->
+                        <img src="imagens/sejavoluntario.jpg" alt="Pessoa cuidando de coelhos" width="320">
+                         <div class="work-card-content">
+                            <h3>Seja Voluntário</h3>
+                            <p>Doe seu tempo e amor. Os orelhudos agradecem imensamente!</p>
+                            <a href="voluntario.html" class="cta-button-small">Seja Voluntário</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div><!-- Fim do .container -->
+        
     </main>
 
-    <footer>
-        <section id="contato" class="container section contato" aria-labelledby="ttl-contato">
-      <header class="section__head">
-        <h2 id="ttl-contato">Contato:</h2>
-        <p class="section__sub">Fale com nossa equipe.</p>
-      </header>
+    <footer id="contato">
+        <h2>Contato</h2>
+        
+        <address class="contact-grid">
+            <p><strong>Endereço</strong><br>Rua Exemplo, 123 — Centro — Cidade/UF</p>
+            <p><strong>Telefone</strong><br><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+            <p><strong>E-mail</strong><br><a href="mailto:contato@novatoca.org.br">contato@novatoca.org.br</a></p>
+        </address>
 
-    <address class="contact-grid" style="font-style: normal;">
-      <p><strong>Endereço</strong><br />Rua Exemplo, 123 — Centro — Cidade/UF</p>
-      <p><strong>Telefone</strong><br /><a href="tel:+5511999999999">(11) 99999-9999</a></p>
-      <p><strong>E-mail</strong><br /><a href="mailto:contato@novacotcao.org.br">contato@novatoca.org.br</a></p>
-    </address>
-    </section>
-    </main>
-
-
-    <p>&copy;2025 ONG NOVA TOCA.Todos os direitos reservados.</p>
-        <h5>Desenvolvido por Jônatas Braian</h5>
-
+        <div class="footer-bottom">
+            <p>&copy; 2025 ONG Nova Toca. Todos os direitos reservados.</p>
+            <h5>Desenvolvido por Jônatas Braian</h5>
+        </div>
     </footer>
-
-
-
+    
 </body>
 </html>
+

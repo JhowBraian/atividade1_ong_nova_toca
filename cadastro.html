@@ -1,239 +1,246 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário de Voluntariado Nova Toca</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Voluntariado - Projeto Nova Toca</title>    
 
-    header, main, footer {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    fieldset {
-      margin-bottom: 20px;
-      padding: 15px;
-      border: 2px solid #ccc;
-      border-radius: 8px;
-    }
-
-    legend {
-      font-weight: bold;
-    }
-
-    label {
-      display: inline-block;
-      margin-bottom: 5px;
-    }
-
-    input, button {
-      font-size: 1em;
-    }
-
-    input {
-      padding: 6px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    input:invalid {
-      border: 2px solid #e74c3c;
-    }
-
-    input:valid {
-      border: 2px solid #2ecc71;
-    }
-
-    .error-message {
-      color: #e74c3c;
-      font-size: 0.9em;
-      display: none;
-      margin-top: 2px;
-    }
-
-    button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 30px;
-      font-weight: bold;
-    }
-  </style>
+    
 </head>
 <body>
 
-  <header>
-    <img src="imagens/logo.jpeg" alt="Logotipo do Projeto Nova Toca, mostrando um coelho branco dentro de uma toca marrom com folhas verdes no topo." width="300px">
-    <h1>Seja um Voluntário do Projeto Nova Toca!</h1>
-    <p>Agradecemos o seu interesse em fazer parte da nossa equipe e ajudar os coelhos que mais precisam. No Projeto Nova Toca, cada voluntário faz a diferença, oferecendo carinho, cuidados e esperança para que nossos coelhos encontrem um lar seguro.</p>
-  </header>
-
-  <main> 
-    <form id="form-voluntario" action="#" method="post" novalidate>
-      
-      <fieldset>
-        <legend>Informações Pessoais</legend>
-
-        <p>
-          <label for="Nome">Nome Completo:</label>
-          <input type="text" id="Nome" name="Nomecompleto" required>
-          <span class="error-message">Por favor, preencha seu nome completo.</span>
-        </p>
-
-        <p>
-          <label for="date">Data de Nascimento:</label>
-          <input type="date" id="date" name="data_de_nascimento" required lang="pt-BR">
-          <span class="error-message">Selecione sua data de nascimento.</span>
-        </p>
-
-        <p>
-          <label for="cpf">CPF:</label>
-          <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="123.456.789-10" required>
-          <span class="error-message">Digite um CPF válido (ex: 123.456.789-10).</span>
-        </p>
-
-        <p>
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required>
-          <span class="error-message">Informe um e-mail válido.</span>
-        </p>
-
-        <p>
-          <label for="tel">Telefone para contato:</label>
-          <input type="tel" id="tel" name="telefone" placeholder="(33) 33333-4444" required>
-          <span class="error-message">Informe um número de telefone válido.</span>
-          <br>
-          <input type="checkbox" id="whatsapp">
-          <label for="whatsapp">Deseja receber mensagem no WhatsApp?</label>
-        </p>
-      </fieldset>
-
-      <fieldset>
-        <legend>Endereço</legend>
-
-        <p>
-          <label for="cep">CEP:</label>
-          <input type="text" id="cep" name="cep" placeholder="Apenas números" required maxlength="9">
-          <span class="error-message">Informe seu CEP.</span>
-        </p>
-
-        <p>
-          <label for="logradouro">Rua:</label>
-          <input type="text" id="logradouro" required>
-          <span class="error-message">Informe o nome da rua.</span>
-        </p>
-
-        <p>
-          <label for="numero">Número:</label>
-          <input type="text" id="numero" required>
-          <span class="error-message">Informe o número da residência.</span>
-        </p>
-
-        <p>
-          <label for="bairro">Bairro:</label>
-          <input type="text" id="bairro" required>
-          <span class="error-message">Informe o bairro.</span>
-        </p>
-
-        <p>
-          <label for="cidade">Cidade:</label>
-          <input type="text" id="cidade" required>
-          <span class="error-message">Informe a cidade.</span>
-        </p>
-
-        <p>
-          <label for="uf">Estado:</label>
-          <input type="text" id="uf" required>
-          <span class="error-message">Informe o estado.</span>
-        </p>
-
-        <p>
-          <input type="checkbox" id="folhetos">
-          <label for="folhetos">Aceito receber folhetos da ONG em meu endereço (sem custos)</label>
-        </p>
-      </fieldset>
-
-      <fieldset>
-        <legend>Sua Disponibilidade</legend>
-
-        <p><strong>Quais dias da semana você tem disponibilidade?</strong></p>
-        <div>
-          <input type="checkbox" id="diassemana" name="Disponibilidade_dias[]" value="diassemana">
-          <label for="diassemana">Dias de Semana (segunda a sexta)</label>
+    <header>
+        <div class="logo-group">
+            <img src="imagens/logo.jpeg" alt="Logotipo do Projeto Nova Toca" width="320">
+            <!-- Link para voltar ao Início (sem estilo inline) -->
+            <a href="index.html">
+                 <h1>Nova Toca</h1>
+            </a>
         </div>
-        <div>
-          <input type="checkbox" id="finaisemana" name="Disponibilidade_dias[]" value="finaisemana">
-          <label for="finaisemana">Finais de Semana (sábado ou domingo)</label>
+        <nav>
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+                <li><a href="projetos.html">Projetos</a></li> 
+                <li><a href="cadastro.html">Cadastro</a></li> 
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-- Seção Herói (Baseada no seu <header>) -->
+        <section class="hero-section">
+            <h2>Seja um Voluntário do Projeto Nova Toca!</h2>
+            <p>Agradecemos o seu interesse em fazer parte da nossa equipe e ajudar os coelhos que mais precisam. No Projeto Nova Toca, cada voluntário faz a diferença!</p>
+        </section>
+
+        <div class="container">
+            <!-- Seção do Formulário -->
+            <section>
+                <form action="#" method="post" id="volunteer-form">
+                    
+                    <!-- Feedback visual para o usuário -->
+                    <div id="message-container"></div>
+
+                    <fieldset>
+                        <legend>Informações Pessoais</legend>
+                        
+                        <div class="form-group">
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" id="nome" name="Nomecompleto" required>
+                        </div>
+                            
+                        <div class="form-group">
+                            <label for="nascimento">Data de Nascimento:</label>
+                            <input type="date" id="nascimento" name="data_de_nascimento" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cpf">CPF:</label>
+                            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="123.456.789-10" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tel">Telefone para contato:</label>
+                            <input type="tel" id="tel" name="telefone" placeholder="(11) 99999-8888" required>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="whatsapp" name="whatsapp" value="sim">
+                            <label for="whatsapp">Deseja receber mensagens no Whatsapp?</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        
+                        <div class="form-group">
+                            <label for="cep">CEP:</label>
+                            <input type="text" id="cep" name="cep" placeholder="Apenas números (ex: 01001000)" required maxlength="8" autocomplete="postal-code">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="logradouro">Rua:</label>
+                            <input type="text" id="logradouro" name="logradouro" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="numero">Número:</label>
+                            <input type="text" name="numero" id="numero" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bairro">Bairro:</label>
+                            <input type="text" name="bairro" id="bairro" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" name="cidade" id="cidade" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="uf">Estado (UF):</label>
+                            <input type="text" name="estado" id="uf" required maxlength="2">
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="folhetos" name="folhetos" value="sim">
+                            <label for="folhetos">Aceito receber folhetos da ONG (sem custos)</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Sua Disponibilidade</legend>
+                        
+                        <p class="form-instructions">Quais dias da semana você tem disponibilidade?</p>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="diasdasemana" name="Disponibilidade_dias[]" value="dias_dasemana">
+                            <label for="diasdasemana">Dias de Semana (segunda a sexta)</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="finaisdesemana" name="Disponibilidade_dias[]" value="finais_desemana">
+                            <label for="finaisdesemana">Finais de Semana (sábado ou domingo)</label>
+                        </div>
+
+                        <p class="form-instructions top-margin">Em quais períodos?</p>
+                        <div class="checkbox-group">
+                            <input type="radio" id="manha" name="periodo" value="manha">
+                            <label for="manha">Manhã</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="radio" id="tarde" name="periodo" value="tarde">
+                            <label for="tarde">Tarde</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="radio" id="noite" name="periodo" value="noite">
+                            <label for="noite">Noite</label>
+                        </div>
+                    </fieldset>
+                    
+                    <p style="text-align: center; margin-top: 2rem; color: #5a4c42; font-weight: 500;">
+                        Sua paixão pelos coelhos é a força do Projeto Nova Toca. Muito obrigado!
+                    </p>
+
+                    <!-- Adicionei a classe 'full-width' para este botão -->
+                    <button type="submit" class="cta-button full-width"><strong>Enviar Formulário</strong></button>
+                </form>
+            </section>
+        </div><!-- Fim do .container -->
+    </main>
+
+    <footer id="contato">
+        <h2>Contato</h2>
+        <address class="contact-grid">
+            <p><strong>Endereço</strong><br>Rua Exemplo, 123 — Centro — Cidade/UF</p>
+            <p><strong>Telefone</strong><br><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+            <p><strong>E-mail</strong><br><a href="mailto:contato@novatoca.org.br">contato@novatoca.org.br</a></p>
+        </address>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ONG Nova Toca. Todos os direitos reservados.</p>
+            <h5>Desenvolvido por Jônatas Braian</h5>
         </div>
+    </footer>
+    
+    <!-- O JavaScript específico desta página permanece aqui -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- 1. Script de Auto-preenchimento do CEP ---
+            const cepInput = document.getElementById('cep');
+            if (cepInput) {
+                cepInput.addEventListener('keyup', (e) => {
+                    const cep = e.target.value.replace(/\D/g, ''); // Remove não-números
+                    if (cep.length === 8) {
+                        fetch(`https://viacep.com.br/ws/${cep}/json/`)
+                            .then(response => response.json())
+                            .then(data => {
+                                if (!data.erro) {
+                                    document.getElementById('logradouro').value = data.logradouro;
+                                    document.getElementById('bairro').value = data.bairro;
+                                    document.getElementById('cidade').value = data.localidade;
+                                    document.getElementById('uf').value = data.uf;
+                                    // Foca no número
+                                    document.getElementById('numero').focus();
+                                } else {
+                                    console.log('CEP não encontrado.');
+                                    // Opcional: limpar campos se o CEP for inválido
+                                    document.getElementById('logradouro').value = "";
+                                    document.getElementById('bairro').value = "";
+                                    document.getElementById('cidade').value = "";
+                                    document.getElementById('uf').value = "";
+                                }
+                            })
+                            .catch(error => console.error('Erro ao buscar CEP:', error));
+                    }
+                });
+            }
 
-        <p><strong>Em quais períodos?</strong></p>
-        <div>
-          <input type="radio" id="manha" name="periodo" value="manha" required>
-          <label for="manha">Manhã</label>
-        </div>
-        <div>
-          <input type="radio" id="tarde" name="periodo" value="tarde">
-          <label for="tarde">Tarde</label>
-        </div>
-        <div>
-          <input type="radio" id="noite" name="periodo" value="noite">
-          <label for="noite">Noite</label>
-        </div>
-      </fieldset>
-
-      <p><button type="submit"><strong>Enviar</strong></button></p>
-    </form>
-  </main>
-
-  <footer>
-    <p>Sua paixão pelos coelhos é a força do Projeto Nova Toca. Muito obrigado!</p>
-  </footer>
-
-  <script>
-    // Exibe mensagens de erro personalizadas
-    const form = document.getElementById('form-voluntario');
-    form.addEventListener('submit', (e) => {
-      let valido = true;
-      form.querySelectorAll('input[required]').forEach(input => {
-        const msg = input.nextElementSibling;
-        if (input.checkValidity()) {
-          msg.style.display = 'none';
-        } else {
-          msg.style.display = 'block';
-          valido = false;
-        }
-      });
-
-      if (!valido) {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    });
-
-    // Força formato de data brasileiro (dia/mês/ano)
-    const dateInput = document.getElementById('date');
-    dateInput.addEventListener('focus', () => {
-      dateInput.showPicker?.();
-    });
-  </script>
-
+            // --- 2. Script de Validação de Formulário ---
+            const form = document.getElementById('volunteer-form');
+            const messageContainer = document.getElementById('message-container');
+            
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault(); // Impede o envio real da página
+                    
+                    // Reseta mensagens anteriores
+                    messageContainer.className = '';
+                    messageContainer.textContent = '';
+                    
+                    if (form.checkValidity()) {
+                        // Se o formulário for válido
+                        messageContainer.className = 'success';
+                        messageContainer.textContent = 'Formulário enviado com sucesso! Entraremos em contato em breve.';
+                        
+                        form.reset(); // Limpa o formulário
+                        
+                        // Rola a página para o topo da mensagem
+                        messageContainer.scrollIntoView({ behavior: 'smooth' });
+                        
+                    } else {
+                        // Se o formulário for inválido
+                        messageContainer.className = 'error';
+                        messageContainer.textContent = 'Por favor, preencha todos os campos obrigatórios corretamente.';
+                        
+                        // Encontra o primeiro campo inválido e foca nele
+                        const firstInvalidField = form.querySelector(':invalid');
+                        if (firstInvalidField) {
+                            firstInvalidField.focus();
+                        }
+                    }
+                });
+            }
+            
+        });
+    </script>
+    
 </body>
 </html>
+
